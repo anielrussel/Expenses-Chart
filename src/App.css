@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--cream);
+  font-family: var(--font-family);
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.chart {
+  width: 500px;
+  height: auto;
+  margin-top: 7rem;
+}
+.chart-balance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 15px;
+  color: var(--pale-orange);
+  background-color: var(--soft-red);
+}
+.chart-bar {
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-top: 1rem;
+  background-color: var(--pale-orange);
+  display: flex;
+  flex-direction: column;
+}
+.chart-bar h1 {
+  color: var(--dark-brown);
+}
+.chart-bar-text {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  justify-content: space-between;
+}
+.chart-bar-text1 p {
+  color: var(--medium-brown);
+}
+.chart-bar-text1 h1 {
+  font-size: 40px;
+}
+.chart-bar-text2 {
+  text-align: right;
+  margin-top: 1rem;
+}
+.chart-bar-text2 span {
+  color: var(--medium-brown);
+}
+.chart-bar-text2 p {
+  font-weight: 700;
+}
+@media screen and (max-width: 425px) {
+  .chart {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .chart {
+    width: 350px;
+  }
+}
